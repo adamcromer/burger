@@ -10,6 +10,6 @@ Add a burger title on the left hand side. The burger will be added to the curren
 
 Unfortunately, as in real life, you can't "undevour" a burger after eating it. You'll have to add it to the list again to "devour" it again.
 
-<br>
+<hr>
 
 [Made by Adam Cromer, 2019.](http://www.adamcromer.com)
