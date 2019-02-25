@@ -1,3 +1,3 @@
 exports.pass = {
-    id: process.env.mysql,
+    id: process.env.mysql
 };

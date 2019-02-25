@@ -2,6 +2,8 @@
 var mysql = require("mysql");
 
 //Pass read using dotenv
+require('dotenv').config();
+var password = require("./pass.js")
 var pass = password.pass.id;
 
 var connection = mysql.createConnection({
