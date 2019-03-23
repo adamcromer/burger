@@ -1,42 +1,44 @@
-<h1>Eat that veggie burger!</h1>
+<h1 class="text-center">Eat that veggie burger!</h1>
 
-<h2>These burgers are awaiting to be eaten!</h2>
+<div class="float-left w-50 mt-3">
+    <h2>Eat these burgers:</h2>
+    <ul class="mt-2">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="mt-2">
+            {{this.burgerName}}
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li>
-        {{this.id}}. {{this.burger_name}}
+            <button data-burgerID="{{this.id}}" id="devour">Eat me!</button>
+        </li>
+        {{/unless}}
+        {{/each}}
+    </ul>
+</div>
 
-        <button data-burgerid="{{this.id}}" class="devourBurger">Eat me!</button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
+<div class="float-right w-50 mt-3">
+    <h2>Eaten burgers:</h2>
+    <ul class="mt-2">
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>
+            <p>
+                {{this.burgerName}}
+            </p>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
 
-<h2>These burgers have already been eaten.</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>
-        <p>
-            {{this.id}} {{this.burger_name}}
-        </p>
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add your own veggie burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="bg">Burger Name:</label>
-        <input type="text" id="bg" name="name">
-    </div>
-
-    <button type="submit">Add Burger</button>
-</form>
+<div id="newBurger">
+    <h2 class="mt-2">Add your own veggie burger</h2>
+    <form class="create-form">
+        <div class="form-group mt-3 ml-3">
+            <label for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="name">
+        </div>
+        <button type="submit" id="submit">Add Burger</button>
+    </form>
+</div>
 
 <link rel="stylesheet" type="text/css" href="\burger\views\layouts\style.css">

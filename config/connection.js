@@ -1,11 +1,6 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-//Pass read using dotenv
-require('dotenv').config();
-var password = require("./pass.js")
-var pass = password.pass.id;
-
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,

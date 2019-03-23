@@ -1,6 +1,8 @@
 var connection = require("./connection.js");
 
+//Functions to call from the database
 var orm = {
+    //Selects all
     selectAll: function (callback) {
         var queryString = "SELECT * FROM burgers";
 
@@ -13,6 +15,7 @@ var orm = {
             callback(result);
         });
     },
+    //Inserts one
     insertOne: function (columnInput, value, callback) {
         var queryString = "INSERT INTO burgers (??) VALUES (?)";
 
@@ -25,7 +28,8 @@ var orm = {
             callback(result);
         });
     },
-    updateOne: function (columnInput, value, id, callback) {
+    //Update one
+    updateOne: function (tableInput, columnInput, value, id, callback) {
         var queryString = "UPDATE burgers SET ?? =? WHERE ID =?";
 
         console.log(queryString);

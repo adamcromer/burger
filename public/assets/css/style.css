@@ -1,4 +1,16 @@
 html {
-    background: url(burger/public/assets/images/plaid.jpg) repeat center center fixed;
-    background-size: 30%;
+    background: url(../images/plaid.jpg) repeat center center fixed;
+}
+
+.container {
+    background-color: #fdfbf3;
+}
+
+body {
+    background-color: transparent;
+}
+
+#newBurger {
+    margin-left: 33%;
+    float: left;
 }

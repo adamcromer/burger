@@ -6,7 +6,7 @@
 
 [Open the application.]()
 
-Add a burger title on the left hand side. The burger will be added to the current list and you will now have the option to devour it. The devoured burger will then be added to the list on the right hand side for devoured burgers.
+Add a burger in the add a burger section at the bottom. The burger will be added to the current list and you will now have the option to devour it. The devoured burger will then be added to the list on the right hand side for devoured burgers.
 
 Unfortunately, as in real life, you can't "undevour" a burger after eating it. You'll have to add it to the list again to "devour" it again.
 
