@@ -2,10 +2,6 @@ html {
     background: url(../images/plaid.jpg) repeat center center fixed;
 }
 
-.container {
-    background-color: #fdfbf3;
-}
-
 body {
     background-color: transparent;
 }
@@ -13,4 +9,9 @@ body {
 #newBurger {
     margin-left: 33%;
     float: left;
+}
+
+.divStyle {
+    background-color: #fdfbf3;
+    border: 1vw solid #e6aaac;
 }
