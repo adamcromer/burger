@@ -6,12 +6,7 @@ body {
     background-color: transparent;
 }
 
-#newBurger {
-    margin-left: 33%;
-    float: left;
-}
-
 .divStyle {
     background-color: #fdfbf3;
-    border: 1vw solid #e6aaac;
+    border: 0.5vw solid #e6aaac;
 }

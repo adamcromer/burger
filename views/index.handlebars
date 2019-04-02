@@ -1,10 +1,10 @@
 <div class="divStyle">
-    <h1 class="text-center">Ultimate Veggie Burger</h1>
-    <h2 class="text-center">Add your choice of toppings to create the ultimate veggie burger</h2>
+    <h1 class="text-center pt-2 pb-1">Ultimate Veggie Burger</h1>
+    <h2 class="text-center pb-1">Add your choice of toppings to create the ultimate veggie burger</h2>
 </div>
 
-<div class="float-left w-50 mt-3 divStyle">
-    <h2>Add These Toppings:</h2>
+<div class="float-left mt-3 p-1 divStyle">
+    <h2 class="p-1">Add These Toppings:</h2>
     <ul class="mt-2">
         {{#each burgers}}
         {{#unless devoured}}
@@ -17,8 +17,8 @@
     </ul>
 </div>
 
-<div class="float-right w-50 mt-3 divStyle">
-    <h2>Current Toppings:</h2>
+<div class="float-left mt-3 ml-3 p-1 divStyle">
+    <h2 class="p-1">Current Toppings:</h2>
     <ul class="mt-2">
         <li>
             <p>
@@ -30,6 +30,7 @@
         <li>
             <p>
                 {{this.burgerName}}
+                <button data-burgerid="{{this.id}}" class="remove">Remove me!</button>
             </p>
         </li>
         {{/if}}
@@ -42,14 +43,14 @@
     </ul>
 </div>
 
-<div id="newBurger" class="divStyle">
-    <h2 class="mt-2">Add your own favorite topping:</h2>
+<div class="float-left divStyle mt-3 ml-3 p-1">
+    <h2 class="p-1 ml-3">Add a Topping:</h2>
     <form class="create-form">
         <div class="form-group mt-3 ml-3">
-            <label for="burger">Topping:</label>
-            <input type="text" id="burger" name="name">
+            <label for="burger" class="float-left">Topping:</label>
+            <input type="text" id="burger" name="name" class="float-left ml-2">
+            <button type="submit" id="submit" class="float-right ml-2 mr-2">Add Topping</button>
         </div>
-        <button type="submit" id="submit">Add Topping</button>
     </form>
 </div>
 

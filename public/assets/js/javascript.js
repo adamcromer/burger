@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
-
-    let submit = $("#submit");
-    let burger = $("#burger");
+    const submit = $("#submit");
+    const burger = $("#burger");
 
     //Create new burger on submit
     submit.click(() => {
@@ -32,6 +31,26 @@ $(document).ready(function () {
         console.log(id);
         let newDevourState = {
             devoured: 1
+        };
+
+        // Send the PUT request.
+        $.ajax("/api/burgers/" + id, {
+            type: "PUT",
+            data: newDevourState
+        }).then(
+            function () {
+                location.reload();
+            }
+        );
+    });
+
+    $(".remove").on("click", () => {
+        event.preventDefault();
+
+        let id = $(this).data("burgerid");
+        console.log(id);
+        let newDevourState = {
+            devoured: 0
         };
 
         // Send the PUT request.
