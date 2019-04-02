@@ -11,7 +11,6 @@ $(document).ready(function () {
             name: burger.val()
         };
         burger.val("");
-        console.log(newBurger.name);
 
         // Send the POST request.
         $.ajax("/api/burgers", {

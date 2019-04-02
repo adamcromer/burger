@@ -10,3 +10,16 @@ body {
     background-color: #fdfbf3;
     border: 0.5vw solid #e6aaac;
 }
+
+.btnStyle {
+    background-color: #e6aaac;
+    border: 0.2vw solid #e6aaac;
+}
+
+.btnStyle:hover {
+    background-color:#fdfbf3;
+}
+
+#navLeft {
+    margin-left:25%;
+}
