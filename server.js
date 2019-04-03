@@ -15,4 +15,4 @@ app.use(routes);
 
 app.listen(PORT, function() {
     console.log('Server made successfully. View at: http://localhost:' + PORT);
-})
+});
