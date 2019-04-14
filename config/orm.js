@@ -29,12 +29,12 @@ var orm = {
         });
     },
     //Update one
-    updateOne: function (tableInput, columnInput, value, id, callback) {
+    updateOne: function (columnInput, value, id, callback) {
         var queryString = "UPDATE burgers SET ?? =? WHERE ID =?";
 
         console.log(queryString);
 
-        connection.query(queryString, [tableInput, columnInput, value, id], function (err, result) {
+        connection.query(queryString, [columnInput, value, id], function (err, result) {
             if (err) throw err;
 
             console.log(result);

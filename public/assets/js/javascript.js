@@ -4,13 +4,14 @@ $(document).ready(function () {
     const burger = $("#burger");
 
     //Create new burger on submit
-    submit.click(() => {
+    submit.click(function() {
         event.preventDefault();
 
         let newBurger = {
             name: burger.val()
         };
         burger.val("");
+        console.log("test")
 
         // Send the POST request.
         $.ajax("/api/burgers", {
@@ -23,13 +24,13 @@ $(document).ready(function () {
         )
     });
 
-    $(".devour").on("click", () => {
+    $(".devour").on("click", function() {
         event.preventDefault();
 
         let id = $(this).data("burgerid");
         console.log(id);
         let newDevourState = {
-            devoured: 1
+            devour: 1
         };
 
         // Send the PUT request.
@@ -43,13 +44,13 @@ $(document).ready(function () {
         );
     });
 
-    $(".remove").on("click", () => {
+    $(".remove").on("click", function() {
         event.preventDefault();
 
         let id = $(this).data("burgerid");
         console.log(id);
         let newDevourState = {
-            devoured: 0
+            devour: 0
         };
 
         // Send the PUT request.
