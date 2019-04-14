@@ -7,6 +7,7 @@ var orm = {
         var queryString = "SELECT * FROM burgers";
 
         console.log(queryString);
+        console.log("selectAll error");
 
         connection.query(queryString, function (err, result) {
             if (err) throw err;
