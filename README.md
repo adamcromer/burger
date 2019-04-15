@@ -1,6 +1,6 @@
-# Eat that Veggie Burger!
+# Ultimate Veggie Burger!
 
-<b>Eat that Veggie Burger</b> is an app to add or remove toppings to your perfect veggie burger. This application is hosted on a Heroku server using Express and made using Node, JavaScript, MySQL, and Handlebars.
+<b>Ultimate Veggie Burger</b> is an app to add or remove toppings to your perfect veggie burger. This application is hosted on a Heroku server using Express and made using Node, JavaScript, MySQL, and Handlebars.
 
 ## <b>How To Use</b>
 
