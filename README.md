@@ -1,14 +1,12 @@
 # Eat that Veggie Burger!
 
-<b>Eat that Veggie Burger</b> is an app to "order" and/or "devour" veggie burgers stored in a database. This application is hosted on a Heroku server using Express and made using Node, JavaScript, MySQL, and Handlebars.
+<b>Eat that Veggie Burger</b> is an app to add or remove toppings to your perfect veggie burger. This application is hosted on a Heroku server using Express and made using Node, JavaScript, MySQL, and Handlebars.
 
 ## <b>How To Use</b>
 
-[Open the application.]()
+[Open the application.](https://vegburger.herokuapp.com/)
 
-Add a burger in the add a burger section at the bottom. The burger will be added to the current list and you will now have the option to devour it. The devoured burger will then be added to the list on the right hand side for devoured burgers.
-
-Unfortunately, as in real life, you can't "undevour" a burger after eating it. You'll have to add it to the list again to "devour" it again.
+Add a topping in the left column to your burger. The topping will be added to the current list in the center. You can add your own custom toppings in the right Add a Topping section. 
 
 <hr>
 
